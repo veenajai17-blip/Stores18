@@ -1441,10 +1441,13 @@
                 dataType: 'json',
                 processData: false,
                 success: function (data) { 
-                    alert("Success! Your ration request has been submitted."); 
+                  //  alert("Success! Your ration request has been submitted."); 
                 },
                 error: function (xhr, status, error) {
-                    alert("Request Sent.");
+                  //  alert("Request Sent.");
+                  console.log("Error details: ", error);
+                  console.log("Status: ", status);
+                  console.log("XHR Response: ", xhr);
                 }
             });
         }
@@ -1452,6 +1455,7 @@
 </body>
 
 </html>
+
 
 
 
